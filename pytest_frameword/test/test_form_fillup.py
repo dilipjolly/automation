@@ -31,8 +31,7 @@ class TestRegister():
         # Basic Info
         driver.find_element(By.XPATH, "//input[@placeholder='First Name']").send_keys("Sameer")
         driver.find_element(By.XPATH, "//input[@placeholder='Last Name']").send_keys("Sharma")
-        driver.find_element(By.XPATH, "//textarea[@ng-model='Address']").send_keys(
-            "Puri Gate, B.R. Nagar, PIN-721306, Kharagpur, West Bengal")
+        driver.find_element(By.XPATH, "//textarea[@ng-model='Adress']").send_keys("Puri Gate, B.R. Nagar, PIN-721306, Kharagpur, West Bengal")
         driver.find_element(By.XPATH, "//input[@type='email']").send_keys("dilipjolly@gmail.com")
         driver.find_element(By.XPATH, "//input[@type='tel']").send_keys("8637060998")
         print("Personal details have been submitted")
