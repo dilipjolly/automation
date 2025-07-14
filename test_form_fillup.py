@@ -17,7 +17,7 @@ if not log.handlers:
     log.addHandler(handler)
 
 
-class TestRegister():
+class TestRegister:
     def test_registration(self):
         global driver
         driver = webdriver.Chrome()
@@ -47,7 +47,6 @@ class TestRegister():
         log.info("Hobbies selected")
 
         # Language selection
-
     def test_language(self):
         driver.find_element(By.ID, "msdd").click()
         WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//li/a[text()='Hindi']"))).click()
